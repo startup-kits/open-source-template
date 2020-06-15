@@ -1,50 +1,107 @@
+```
+${PROJECT NAME} = project name
+${PACKAGE NAME} = npm package name
+${USER} = repository user name
+${REPO} = repository name
+```
+
 <h1 align="center">
   <br>
-  PROJECTNAME
+  ${PROJECT NAME}
   <br>
 </h1>
 
-<p align="center">SHORT DESCRIPTION</p>
+<p align="center">Short description of project.</p>
 
 <p align="center">
-  <img src="https://img.shields.io/npm/v/@enx/env" />
-  <img src="https://img.shields.io/bundlephobia/min/@enx/env" />
-  <img src="https://img.shields.io/github/last-commit/USER/REPO" />
+  <img src="https://img.shields.io/npm/v/${PACKAGE NAME}" />
+  <img src="https://img.shields.io/bundlephobia/min/${PACKAGE NAME}" />
+  <img src="https://img.shields.io/github/last-commit/${USER}/${REPO}" />
 </p>
 
-> Extended description
+> Long description of project.
 
 See all [features](#features).
 
 ## Table of contents
 
-* [Installation](#Installation)
-  * [Requirements](#Requirements)
-  * [Installing](#Installing)
-    * [Via package manager](#Via-package-manager)
-    * [Unpkg](#Unpkg)
-* [Usage](#Usage)
-  * [TL;DR - The most simple usage](#TLDR)
-  * [Advanced usage](#Advanced-usage)
-* [Extending](#Extending)
-* [Help](#Help)
-  * [FAQ](#FAQ)
-  * [Support](#Support)
-* [API](#API)
-* [Technical concepts](#Tecnhical-concepts)
-  * [Related projects](#Related-projects)
-  * [Similar projects](#Similar-projects)
-* [Contributing](#Contributing)
-  * [If you don't want to code](#If-you-don-t-want-to-code)
-    * [Star the project](#Star-the-project)
-    * [Tweet it](#Tweet-it)
-    * [Donate](#Donate)
-  * [If you want to code](#If-you-want-to-code)
-    * [Code of conduct](#Code-of-conduct)
-    * [SemVer](#SemVer)
-    * [Roadmap](#Roadmap)
-* [Hall of fame](#Hall-of-fame)
-* [License](#License)
+<ul>
+  <li>
+    <details>
+      <summary><a href="#Installation">Installation</a></summary>
+      <ul>
+        <li><a href="#Requirements">Requirements</a></li>
+        <li><a href="#Installing">Installing</a></li>
+      </ul>
+    </details>
+  </li>
+  <li>
+    <details>
+      <summary><a href="#Usage">Usage</a></summary>
+      <ul>
+        <li><a href="#TLDR">TL;DR - The most simple usage</a></li>
+        <li><a href="#example">An example title</a></li>
+      </ul>
+    </details>
+  </li>
+  <li>
+    <details>
+      <summary><a href="#Extending">Extending</a></summary>
+      <ul>
+        <li><a href="#example">An example title</a></li>
+      </ul>
+    </details>
+  </li>
+  <li>
+    <details>
+      <summary><a href="#Help">Help</a></summary>
+      <ul>
+        <li><a href="#FAQ">FAQ</a></li>
+        <li><a href="#Support">Support</a></li>
+      </ul>
+    </details>
+  </li>
+  <li>
+    <details>
+      <summary><a href="#API">API</a></summary>
+      <ul>
+        <li><a href="#example">An example title</a></li>
+      </ul>
+    </details>
+  </li>
+  <li>
+    <details>
+      <summary><a href="#Tecnhical-concepts">Technical concepts</a></summary>
+      <ul>
+        <li><a href="#Motivation-and-design">Motivation and design</a></li>
+        <li><a href="#Features">Features</a></li>
+        <li><a href="#Related-projects">Related projects</a></li>
+        <li><a href="#Similar-projects">Similar projects</a></li>
+      </ul>
+    </details>
+  </li>
+  <li>
+    <details>
+      <summary><a href="#Contributing">Contributing</a></summary>
+      <ul>
+        <li><a href="#If-you-don-t-want-to-code">If you don't want to code</a></li>
+        <li><a href="#If-you-want-to-code">If you want to code</a></li>
+      </ul>
+    </details>
+  </li>
+  <li>
+    <details>
+      <summary><a href="#Hall-of-fame">Hall of fame</a></summary>
+      <ul>
+        <li><a href="#who-is-using">Who is using</a></li>
+        <li><a href="#Contributors">Contributors</a></li>
+        <li><a href="#Backers">Backers</a></li>
+        <li><a href="#Sponsors">Sponsors</a></li>
+      </ul>
+    </details>
+  </li>
+  <li><a href="#License">License</a></li>
+</ul>
 
 ---
 
@@ -54,7 +111,7 @@ See all [features](#features).
 
 ![](https://img.shields.io/static/v1?label=npm&message=6.14.5&color=brightgreen) ![](https://img.shields.io/static/v1?label=node&message=12.16.3&color=brightgreen) ![](https://img.shields.io/static/v1?label=os&message=ubuntu-20.04&color=blueviolet) ![](https://img.shields.io/static/v1?label=platforms&message=node|browser&color=777) 
 
-PROJECTNAME was tested for the environments below. Even we believe it may works in older versions or other platforms, **it is not intended to**.
+${PROJECT NAME} was tested for the environments below. Even we believe it may works in older versions or other platforms, **it is not intended to**.
 
 <details>
   <summary><b>See tested environments</b></summary>
@@ -72,27 +129,27 @@ PROJECTNAME was tested for the environments below. Even we believe it may works 
 
 #### Via package manager
 
-![](https://nodei.co/npm/async.png?downloads=true&downloadRank=true&stars=true)
+![](https://nodei.co/npm/${PACKAGE NAME}.png?downloads=true&downloadRank=true&stars=true)
 
 ```shell
-$ npm install --save PACKAGENAME
+$ npm install --save ${PACKAGE NAME}
 ```
 <details>
   <summary><b>See other options</b></summary>
 
 #### Unpkg
 
-[https://unpkg.com/:package@:version/:file](https://unpkg.com/:package@:version/:file)
+[https://unpkg.com/:${PACKAGE NAME}](https://unpkg.com/:${PACKAGE NAME})
 
 ```javascript
-<script src="https://unpkg.com/:package@:version/:file" />
+<script src="https://unpkg.com/:${PACKAGE NAME}" />
 ```
 
 </details>
 
 <br/>
 
-[↟ Back to top](#Table-of-contents)
+<p align="right"><a href="#Table-of-contents">↟ Back to top</a></p>
 
 ---
 
@@ -106,26 +163,28 @@ $ npm install --save PACKAGENAME
 The most simple usage
 
 ```javascript
-import module from 'PACKAGENAME';
+import module from '${PACKAGE NAME}';
 
 
 ```
 
-### Advanced usage
+### An example title of an advanced usage topic
 
 <br/>
 
-[↟ Back to top](#Table-of-contents)
+<p align="right"><a href="#Table-of-contents">↟ Back to top</a></p>
 
 ---
 
 ## Extending
 
-Writing plugins
+### Writing plugins
+
+### Community plugins
 
 <br/>
 
-[↟ Back to top](#Table-of-contents)
+<p align="right"><a href="#Table-of-contents">↟ Back to top</a></p>
 
 ---
 
@@ -142,21 +201,23 @@ Answer here
 
 ### Support
 
-![](https://img.shields.io/github/issues/USER/REPO)
+![](https://img.shields.io/github/issues/${USER}/${REPO})
 
-If you need help or have a problem with this project and you not found you problem in FAQ above, [start an issue](https://github.com/ORGANIZATION/REPOSITORY/issues).
+If you need help or have a problem with this project and you not found you problem in FAQ above, [start an issue](https://github.com/${USER}/${REPO}/issues).
 
 > We will not provide a SLA to your issue, so, don't expect it to be answered in a short time.
 
 <br/>
 
-[↟ Back to top](#Table-of-contents)
+<p align="right"><a href="#Table-of-contents">↟ Back to top</a></p>
 
 ---
 
 ## API
 
 ### `ClassOrModule.js` _class|module_
+
+#### Members
 
 <details>
   <summary>
@@ -166,31 +227,75 @@ If you need help or have a problem with this project and you not found you probl
     </b>
   </summary>
 
+> Description what it is
+
+</details>
+
+#### Properties
+
+<details>
+  <summary>
+    <b>
+      <code>propertyName</code> 
+      <i>type</i>
+    </b>
+  </summary>
+
+> Description of what it is
+
+</details>
+
+#### Methods
+
+<details>
+  <summary>
+    <b>
+      <code>methodName()</code> 
+      <i>function(arg1, optional?):ReturnType</i>
+    </b>
+  </summary>
+
+
+
 > Description what it does
 
 **Arguments**
 
 | Argument | Type | Required | Default | Description |
 | - | - | - | - | - |
-| argument | `string` | true | `"default"` | It is an argument |
+| arg1 | `Type` | true | `default` | Description of argument |
 
 **Returns**
 
-`Promise<string>`
+`AzureFunctionCascade` the current instance of AzureFunctionCascade.
+
+**Callbacks**
+
+##### `arg1Callback` _async function (context, STOP_SIGNAL?):any_
+
+| Argument | Type | Required | Default | Description |
+| - | - | - | - | - |
+| arg1 | `Type` | true | `default` | Description of argument |
+
+Returns: description of callback return.
 
 </details>
 
 <br/>
 
-[↟ Back to top](#Table-of-contents)
+<p align="right"><a href="#Table-of-contents">↟ Back to top</a></p>
 
 ---
 
 ## Tecnhical concepts
 
-> PROJECTNAME was inspired from ...
+### Motivation and design
+
+${PROJECT NAME} was inspired from ...
 
 ### Features
+
+* Feature
 
 ### Related projects
 
@@ -202,7 +307,7 @@ If you need help or have a problem with this project and you not found you probl
 
 <br/>
 
-[↟ Back to top](#Table-of-contents)
+<p align="right"><a href="#Table-of-contents">↟ Back to top</a></p>
 
 ---
 
@@ -214,11 +319,11 @@ Help us spreading the word or consider making a donation.
 
 #### Star the project
 
-![](https://img.shields.io/github/stars/ORGANIZATION/REPOSITORY?style=social)
+![](https://img.shields.io/github/stars/${USER}/${REPO}?style=social)
 
 #### Tweet it
 
-![](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2FORGANIZATION%2FREPOSITORY)
+![](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2F${USER}%2F${REPO})
 
 #### Donate
 
@@ -227,6 +332,10 @@ Help us spreading the word or consider making a donation.
 ![](https://camo.githubusercontent.com/b8efed595794b7c415163a48f4e4a07771b20abe/68747470733a2f2f7777772e6275796d6561636f666665652e636f6d2f6173736574732f696d672f637573746f6d5f696d616765732f707572706c655f696d672e706e67)
 
 <img src="https://opencollective.com/webpack/donate/button@2x.png?color=blue" width=250 />
+
+#### Add your company name to the [Who is using](#Who-is-using) secion
+
+Make a pull request or start an issue to add your company's name.
 
 ### If you want to code
 
@@ -253,23 +362,27 @@ If you are not solving an issue or fixing a bug, you can help developing the roa
     <b>See the roadmap</b>
   </summary>
 
-- [ ] Create something
-- [ ] Improve documentation
+* [ ] Create something
+* [ ] Improve documentation
 
 </details>
 
 
 <br/>
 
-[↟ Back to top](#Table-of-contents)
+<p align="right"><a href="#Table-of-contents">↟ Back to top</a></p>
 
 ---
 
 ## Hall of fame
 
+### Who is using
+
+* [Company]()
+
 ### Contributors
 
-[![](https://sourcerer.io/fame/$USER/$OWNER/$REPO/images/0)](https://sourcerer.io/fame/$USER/$OWNER/$REPO/links/0)
+[![](https://sourcerer.io/fame/$USER/$OWNER/$REPO/images/0)](https://sourcerer.io/fame/${USER}/${OWNER}/${REPO}/links/0)
 
 ### Backers
 
@@ -281,18 +394,19 @@ If you are not solving an issue or fixing a bug, you can help developing the roa
 
 <br/>
 
-[↟ Back to top](#Table-of-contents)
+<p align="right"><a href="#Table-of-contents">↟ Back to top</a></p>
 
 ---
 
 ## License
 
-![](https://img.shields.io/github/license/USER/REPO)
+![](https://img.shields.io/github/license/${USER}/${REPO})
 
 Licensed under the [MIT License](LICENSE.md).
 
 <br/>
 
-[↟ Back to top](#Table-of-contents)
+<p align="right"><a href="#Table-of-contents">↟ Back to top</a></p>
 
 ---
+1
