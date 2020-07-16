@@ -1,4 +1,5 @@
 ```
+replace these tokens by its values then delete this section
 ${PROJECT NAME} = project name
 ${PACKAGE NAME} = npm package name
 ${USER} = repository user name
@@ -19,9 +20,31 @@ ${REPO} = repository name
   <img src="https://img.shields.io/github/last-commit/${USER}/${REPO}" />
 </p>
 
-> Long description of project.
+<hr>
 
-See all [features](#features).
+<p align="center">
+  <a href="#">Basic usage</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Installation</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Advanced usage</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">API</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Table of contents</a>
+</p>
+
+<hr>
+
+## Features
+
+<dl>
+  <dt><strong>Feature name</strong> 🎁</dt>
+  <dd>Feature definition/description</dd>
+</dl>
+
+<br><hr>
+
+## TL;DR: basic usage
+
+[![](https://img.shields.io/static/v1?label=Try%20it%20online%20on&message=RunKit&color=f55fa6)](https://npm.runkit.com/${PACKAGE NAME})
+
+```javascript
+```
+See more usage topics in [usage](#usage) section. 
+<br><hr>
 
 ## Table of contents
 
@@ -109,7 +132,7 @@ See all [features](#features).
 
 ### Requirements
 
-![](https://img.shields.io/static/v1?label=npm&message=6.14.5&color=brightgreen) ![](https://img.shields.io/static/v1?label=node&message=12.16.3&color=brightgreen) ![](https://img.shields.io/static/v1?label=os&message=ubuntu-20.04&color=blueviolet) ![](https://img.shields.io/static/v1?label=platforms&message=node|browser&color=777) 
+![](https://img.shields.io/static/v1?label=npm&message=6.14.5&color=brightgreen) ![](https://img.shields.io/static/v1?label=node&message=12.16.3&color=brightgreen) ![](https://img.shields.io/static/v1?label=os&message=ubuntu-20.04&color=blueviolet) ![](https://img.shields.io/static/v1?label=platforms&message=node|browser&color=777) ![](https://img.shields.io/static/v1?label=platforms&message=isomorphic&color=orange)
 
 ${PROJECT NAME} was tested for the environments below. Even we believe it may works in older versions or other platforms, **it is not intended to**.
 
@@ -137,6 +160,12 @@ $ npm install --save ${PACKAGE NAME}
 <details>
   <summary><b>See other options</b></summary>
 
+#### Yarn
+
+```shell
+$ yarn add ${PACKAGE NAME}
+```
+
 #### Unpkg
 
 [https://unpkg.com/:${PACKAGE NAME}](https://unpkg.com/:${PACKAGE NAME})
@@ -147,6 +176,28 @@ $ npm install --save ${PACKAGE NAME}
 
 </details>
 
+### Module/language support
+
+![](https://img.shields.io/static/v1?label=modules&message=ES%20Modules%20|%20CommonJS&color=yellow) 
+![](https://img.shields.io/static/v1?label=javascript&message=ECMA2015&color=yellow)
+
+This means you:
+
+* **May** use the module with `import`, `require` or `define`
+* **Should** use polyfills or transpilation if you want to support older environments
+
+<details>
+  <summary><b>See JavaScript features used by this package and its versions</b></summary>
+
+| Version  |  Features used  |
+| -------- | --------------- |
+| ES5 | all common features |
+| ES6 | const, class, destructuring binding, default parameters, let, object short notation, arrow function syntax, template literal syntax |
+| ES8 | async functions, trailing comma in arguments lists |
+| ES9 | object spread property |
+
+</details>
+
 <br/>
 
 <p align="right"><a href="#Table-of-contents">↟ Back to top</a></p>
@@ -154,19 +205,6 @@ $ npm install --save ${PACKAGE NAME}
 ---
 
 ## Usage
-
-![](https://img.shields.io/static/v1?label=modules&message=ES%20Modules%20|%20CommonJS&color=yellow) 
-![](https://img.shields.io/static/v1?label=javascript&message=ECMA2015&color=yellow) 
-
-### TL;DR
-
-The most simple usage
-
-```javascript
-import module from '${PACKAGE NAME}';
-
-
-```
 
 ### An example title of an advanced usage topic
 
@@ -295,6 +333,8 @@ ${PROJECT NAME} was inspired from ...
 
 ### Features
 
+Beyond the features previous listed, ${PROJECT NAME} also have: 
+
 * Feature
 
 ### Related projects
@@ -409,4 +449,4 @@ Licensed under the [MIT License](LICENSE.md).
 <p align="right"><a href="#Table-of-contents">↟ Back to top</a></p>
 
 ---
-1
+
